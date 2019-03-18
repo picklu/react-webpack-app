@@ -1,5 +1,8 @@
-document.addEventListener("DOMContentLoaded", event => {
-    const element = document.createElement('h1');
-    element.innerHTML = "Hello World";
-    document.body.appendChild(element);
-});
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './components/App';
+
+const appComponent = <App />;
+const rootElement = document.getElementById('root');
+
+ReactDOM.render(appComponent, rootElement);
